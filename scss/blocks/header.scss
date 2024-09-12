@@ -1,0 +1,36 @@
+.header {
+  background: var(--color-black);
+  min-height: 100px;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+}
+
+.header__menu {
+
+  .header__list {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    list-style-type: none;
+
+    li a {
+      display: inline-block;
+      font-size: 15px;
+      color: var(--color-grey);
+      text-transform: uppercase;
+      font-family: 'Ubuntu-Regular', sans-serif;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

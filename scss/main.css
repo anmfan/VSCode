@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Обнуляющие стили */
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+a, a:visited {
+  text-decoration: none; }
+
+/* Обнуляющие стили */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #b0a8a8; }
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url("../fonts/Ubuntu-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url("../fonts/Ubuntu-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+.header {
+  background: var(--color-black);
+  min-height: 100px; }
+  .header .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-inline: 20px; }
+
+.header__menu .header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  list-style-type: none; }
+  .header__menu .header__list li a {
+    display: inline-block;
+    font-size: 15px;
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-family: 'Ubuntu-Regular', sans-serif;
+    transition: color 0.2s; }
+    .header__menu .header__list li a:hover {
+      color: #ffffff; }
+
+.footer {
+  background: #000;
+  min-height: 100px; }
+
+body {
+  font-family: 'Ubuntu-Regular', sans-serif;
+  background: #000; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.main {
+  flex-grow: 1; }
+
+/*# sourceMappingURL=main.css.map */
