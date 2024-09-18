@@ -1,0 +1,9 @@
+.series-container {
+  @extend %container-swiper;
+}
+
+.image-series {
+  margin-right: 170px;
+  border-radius: 15px;
+  @extend %current-film;
+}

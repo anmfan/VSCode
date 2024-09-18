@@ -1,0 +1,60 @@
+.swiper-slide {
+  transition: all 0.3s ease-in-out;
+
+  &:not(.swiper-slide-active) {
+
+    .btn-slider {
+      display: none;
+    }
+  }
+}
+
+.slider {
+  @extend %film;
+}
+//Данная настройка для каждого слайдера прописывается дополнительно
+.swiper2, .swiper3 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-slide-active {
+  width: 800px !important;
+
+  .slider {
+    img {
+      filter: contrast(110%) brightness(105%);
+    }
+  }
+}
+
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  border-radius: 15px;
+
+  .image{
+    width: 650px !important;
+    height: 400px !important;
+    opacity: 0.5;
+  }
+
+  .btn-slider {
+    pointer-events: none;
+    height: 40px;
+    padding: 1px;
+    font-size: 13px !important;
+    width: 110px !important;
+  }
+}
+
+

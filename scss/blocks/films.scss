@@ -1,0 +1,9 @@
+.image-film {
+  margin-right: 170px;
+  border-radius: 15px;
+  @extend %current-film;
+}
+
+.film-container {
+  @extend %container-swiper;
+}

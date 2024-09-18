@@ -2,10 +2,14 @@
 @import '../base/vars';
 @import '../scss/blocks/header';
 @import '../scss/blocks/footer';
+@import '../scss/blocks/films';
+@import '../scss/blocks/swiper';
+@import '../scss/blocks/series';
+@import '../scss/blocks/child-films';
+@import '../scss/blocks/regWindow';
 
 body {
   font-family: 'Ubuntu-Regular', sans-serif;
-  background: #000;
 }
 
 .wrapper {
@@ -14,6 +18,16 @@ body {
   min-height: 100%;
 }
 
+.btn-slider {
+  @extend %btn-poster;
+}
+
 .main {
   flex-grow: 1;
+  background-color: var(--main-color);
+  padding-block: 10px;
+}
+
+.none {
+  display: none;
 }

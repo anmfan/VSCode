@@ -1,7 +1,52 @@
 :root {
+  --main-color: #100e19;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-grey: #b0a8a8;
+  --color-grey: #a4a0a0;
+  --height-underline: 1px;
+  --underline-indent: 8px;
+}
+
+%btn-poster {
+  position: absolute;
+  padding: 12px 10px;
+  max-width: 180px;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  background: var(--color-white);
+  border: 1px solid black;
+  color: var(--main-color);
+  right: 13%;
+  bottom: 5%;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+
+  &:hover {
+    background-color: #000;
+    border: 1px solid white;
+    color: var(--color-white);
+  }
+}
+
+%film {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+%current-film {
+  max-width: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+%container-swiper {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 @font-face {
