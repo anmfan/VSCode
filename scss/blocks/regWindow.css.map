@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAE;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;;AAGxB,WAAY;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK",
+"sources": ["regWindow.scss"],
+"names": [],
+"file": "regWindow.css"
+}
